@@ -1,5 +1,10 @@
-body {
-    h1 {
-        color: indigo;
-    }
-}
+
+// globals
+
+@use 'global/normalize';
+@use 'global/fonts';
+@use 'global/globals';
+@use 'global/utils';
+@use 'global/variables';
+
+
