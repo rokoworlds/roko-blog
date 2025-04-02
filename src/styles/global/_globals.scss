@@ -1,8 +1,10 @@
 @use '../helpers/index' as *;
 
 body {
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: var(--ff-main);
+    font-size: rem(16);
 }
 
 a,
@@ -31,4 +33,11 @@ h1, .h1,
 h2, .h2, 
 h3, .h3 {
     font-family: var(--ff-accent);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(640);
+    padding-inline: 1.25rem;
 }

@@ -1,0 +1,44 @@
+@use '../../helpers/index' as *;
+
+.header {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background-color: rgba(255, 252, 239, 0.3);
+    backdrop-filter: blur(9px) saturate(180%);
+
+    &__body {
+
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: rem(20);
+            column-gap: 1rem;
+
+            font-family: var(--ff-accent);
+        }
+    }
+
+    &__menu {
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: rem(5);
+        }
+
+        &-item {
+            &:not(:last-child) {
+                &::after {
+                    content: '|';
+                    margin-inline: rem(5);
+                }
+            }
+        }
+    }
+}
