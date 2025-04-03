@@ -1,0 +1,16 @@
+@use '../../helpers/index' as *;
+
+.about {
+
+    &__title {
+        font-family: var(--ff-accent);
+        font-weight: 600;
+        font-size: rem(16);
+    }
+
+    &__article {
+        font-size: rem(16);
+        padding-block: rem(20);
+        line-height: 1.75;
+    }
+}
