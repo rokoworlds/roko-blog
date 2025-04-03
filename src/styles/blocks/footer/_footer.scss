@@ -1,0 +1,19 @@
+@use '../../helpers/index' as *;
+
+.footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: rem(20);
+        color: var(--color-light-20)
+    }
+
+    &__copyright {
+        font-size: rem(11);
+    }
+
+    &-theme__button {
+        font-size: rem(12);
+    }
+}

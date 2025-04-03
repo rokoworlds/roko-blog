@@ -3,8 +3,8 @@
 :root {
 
     --color-light: #fffcef;
-    --color-light-10: #f2efe3;
-    --color-light-20: #e4e2d8;
+    --color-light-10: #dedbd0;
+    --color-light-20: #9e9c94;
 
     --color-dark: #151514;
     --color-dark-10: #484847;
@@ -12,9 +12,11 @@
 
     --color-accent: #80011f;
 
+    --color-primary: var(--color-light);
+    --color-secondary: var(--color-dark);
 
 
-    --border: #{rem(1)} solid var(--color-dark-10);
+    --border: #{rem(1)} solid var(--color-light-20);
 
     --ff-main: 'Roboto', sans-serif;
     --ff-accent: 'Lexend', sans-serif;

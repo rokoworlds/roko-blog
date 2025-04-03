@@ -1,0 +1,15 @@
+@use '../../helpers/index' as *;
+
+.button {
+    padding: rem(2) rem(5);
+    background-color: transparent;
+    border: var(--border);
+    border-radius: rem(4);
+    font-family: var(--ff-accent);
+    color: var(--color-light-20);
+
+    @include hover {
+        color: var(--color-secondary);
+        border-color: var(--color-secondary);
+    }
+}

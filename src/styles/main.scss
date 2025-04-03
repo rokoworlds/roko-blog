@@ -8,4 +8,6 @@
 @use 'global/variables';
 
 
-@use 'blocks/header/index'
+@use 'blocks/header/header';
+@use 'blocks/footer/footer';
+@use 'blocks/button/button';
