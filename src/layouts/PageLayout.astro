@@ -1,7 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-// import About from "../components/About.astro";
 import "../styles/main.scss";
 ---
 
@@ -18,39 +17,23 @@ import "../styles/main.scss";
     <Header />
     <main>
       <slot />
-      <section class="posts">
-        <div class="posts__inner container">
-          <div class="posts__info">
-            <p class="posts__title">Latest posts</p>
-            <a href="/" class="posts__link link">See all posts</a>
+      <section class="work">
+        <div class="work_inner container">
+          <div class="work__title">
+            <p class="work__title-text">Work Experience</p>
           </div>
-          <div class="posts__all">
-            <ul class="posts__all-list">
-              <li class="posts__all-item">
-                <a href="/" class="posts_all-link">
-                  <div class="posts__all-card card">
-                    <div class="posts__all-card-info">
-                      <p class="posts__card-title">Getting started</p>
-                      <p class="posts__card-description">
-                        Hit the ground running.
-                      </p>
-                    </div>
-                    <div class="posts__card-icon icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#e3e3e3"
-                        ><path
-                          d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
-                        ></path></svg
-                      >
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <div class="work__info">
+            <date class="work__info-date">June 2024 - March 2025</date>
+            <p class="work__info-place">Aviasales</p>
+            <p class="work__info-position">Frontend Developer</p>
+          </div>
+          <div class="work_description">
+            <p>
+              Sit amet consectetur adipisicing elit. Iure illo neque tempora,
+              voluptatem est quaerat voluptas praesentium ipsa dolorem
+              dignissimos nulla ratione distinctio quae maiores eligendi
+              nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor.
+            </p>
           </div>
         </div>
       </section>
