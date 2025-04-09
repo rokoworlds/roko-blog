@@ -1,0 +1,15 @@
+@use '../../helpers/index' as *;
+
+.cards-list {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: rem(16);
+        }
+
+        &__link {
+            width: 100%;
+        }
+
+}
+

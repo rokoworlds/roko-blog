@@ -1,6 +1,10 @@
 @use '../../helpers/index' as *;
 
 .footer {
+
+    padding-top: rem(20);
+    // border-top: var(--border);
+
     &__inner {
         display: flex;
         justify-content: space-between;

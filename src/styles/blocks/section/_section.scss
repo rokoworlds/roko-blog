@@ -1,0 +1,15 @@
+@use '../../helpers/index' as *;
+
+.section {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: rem(20);
+    }
+
+    &__title {
+        font-size: rem(16);
+    }
+}

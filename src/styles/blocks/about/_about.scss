@@ -1,6 +1,7 @@
 @use '../../helpers/index' as *;
 
 .about {
+    padding-top: rem(20);
 
     &__title {
         font-family: var(--ff-accent);

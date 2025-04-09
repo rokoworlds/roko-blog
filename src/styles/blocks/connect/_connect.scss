@@ -1,0 +1,37 @@
+@use '../../helpers/index' as *;
+
+.connect {
+
+    &__title {
+        font-family: var(--ff-accent);
+        font-size: rem(16);
+        font-weight: 600;
+        padding-block: rem(20);
+    }
+
+    &__text{
+        font-size: rem(14);
+        padding-block: rem(10);
+        line-height: 1.75;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: rem(10);
+    }
+
+    &__item {
+        &:not(:last-child) {
+            &::after {
+                content: '|';
+                margin-inline: rem(5);
+            }
+        }
+    }
+
+    &__link {
+        font-family: var(--ff-accent);
+    }
+}

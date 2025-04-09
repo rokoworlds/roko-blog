@@ -11,29 +11,40 @@ import "../styles/main.scss";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>roko</title>
+    <title>roko.</title>
   </head>
   <body>
     <Header />
     <main>
       <slot />
-      <section class="work">
-        <div class="work_inner container">
-          <div class="work__title">
-            <p class="work__title-text">Work Experience</p>
+      <section class="connect">
+        <div class="connect__inner container">
+          <div class="connect__title">
+            <p class="connect__title-text">Let's Connect</p>
           </div>
-          <div class="work__info">
-            <date class="work__info-date">June 2024 - March 2025</date>
-            <p class="work__info-place">Aviasales</p>
-            <p class="work__info-position">Frontend Developer</p>
-          </div>
-          <div class="work_description">
+          <div class="connect__text">
             <p>
-              Sit amet consectetur adipisicing elit. Iure illo neque tempora,
-              voluptatem est quaerat voluptas praesentium ipsa dolorem
-              dignissimos nulla ratione distinctio quae maiores eligendi
-              nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor.
+              If you want to get in touch with me about something or just to say
+              hi, reach out on social media or send me an email.
             </p>
+          </div>
+          <div class="connect__list-box">
+            <ul class="connect__list">
+              <li class="connect__item">
+                <a href="" class="connect__link link"> telegram </a>
+              </li>
+              <li class="connect__item">
+                <a href="" class="connect__link link"> linkedin </a>
+              </li>
+              <li class="connect__item">
+                <a href="" class="connect__link link"> github </a>
+              </li>
+              <li class="connect__item">
+                <a href="" class="connect__link link">
+                  roman.koropat@gmail.com
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

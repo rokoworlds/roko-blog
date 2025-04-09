@@ -1,0 +1,24 @@
+---
+import Card from "./Card.astro";
+
+const { list } = Astro.props;
+---
+
+<div class="cards-list">
+  <ul class="cards-list__list">
+    {
+      list.map((item: any) => {
+        return (
+          <li class="cards-list__item">
+            <a href="/" class="cards-list__link">
+              <Card
+                cardTitle={item.data.title}
+                cardText={item.data.description}
+              />
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

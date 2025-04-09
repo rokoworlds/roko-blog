@@ -1,12 +1,33 @@
 ---
 import About from "../components/About.astro";
-import PostsList from "../components/PostsList.astro";
-import ProjectsList from "../components/ProjectsList.astro";
+import CardsList from "../components/CardsList.astro";
+import Section from "../components/Section.astro";
+
+import Work from "../components/Work.astro";
 import Layout from "../layouts/PageLayout.astro";
+
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const latestPosts = posts.slice(-3);
+
+const projects = await getCollection("projects");
+const latestProjects = projects.slice(-2);
 ---
 
 <Layout>
   <About />
-  <PostsList />
-  <ProjectsList />
+  <Section title="Latest posts" link="/">
+    {posts.length > 0 ? <CardsList list={latestPosts} /> : <p>Coming soon!</p>}
+  </Section>
+  <Work />
+  <Section title="Recent projects" link="/">
+    {
+      projects.length > 0 ? (
+        <CardsList list={latestProjects} />
+      ) : (
+        <p>Coming soon!</p>
+      )
+    }
+  </Section>
 </Layout>

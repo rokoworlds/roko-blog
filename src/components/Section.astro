@@ -1,0 +1,17 @@
+---
+const { title, link } = Astro.props;
+---
+
+<section class="container">
+  <div class="section__head">
+    <h2 class="section__title">{title}</h2>
+    {
+      link && (
+        <a href="/" class="section__link link">
+          See all
+        </a>
+      )
+    }
+  </div>
+  <slot />
+</section>
