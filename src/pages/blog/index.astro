@@ -1,0 +1,19 @@
+---
+import CardsList from "../../components/CardsList.astro";
+import Section from "../../components/Section.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const allPosts = posts.reverse();
+---
+
+<PageLayout>
+  <Section title="Posts">
+    <p>
+      I explore, learn and tryout new stuff and write about my journey in here.
+    </p>
+    <CardsList list={allPosts} />
+  </Section>
+</PageLayout>

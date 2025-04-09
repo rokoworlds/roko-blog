@@ -1,0 +1,16 @@
+---
+import CardsList from "../../components/CardsList.astro";
+import Section from "../../components/Section.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+const allProjects = projects.reverse();
+---
+
+<PageLayout>
+  <Section title="Projects">
+    <CardsList list={allProjects} />
+  </Section>
+</PageLayout>

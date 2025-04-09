@@ -1,6 +1,7 @@
 @use '../../helpers/index' as *;
 
 .section {
+    padding-top: rem(34);
 
     &__head {
         display: flex;

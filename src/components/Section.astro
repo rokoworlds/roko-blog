@@ -2,12 +2,12 @@
 const { title, link } = Astro.props;
 ---
 
-<section class="container">
+<section class="section container">
   <div class="section__head">
     <h2 class="section__title">{title}</h2>
     {
       link && (
-        <a href="/" class="section__link link">
+        <a href={link} class="section__link link">
           See all
         </a>
       )

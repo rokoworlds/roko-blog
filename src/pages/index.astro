@@ -17,11 +17,13 @@ const latestProjects = projects.slice(-2);
 
 <Layout>
   <About />
-  <Section title="Latest posts" link="/">
+  <Section title="Latest posts" link="/blog">
     {posts.length > 0 ? <CardsList list={latestPosts} /> : <p>Coming soon!</p>}
   </Section>
-  <Work />
-  <Section title="Recent projects" link="/">
+  <Section title="Work Experience">
+    <Work />
+  </Section>
+  <Section title="Recent projects" link="/projects">
     {
       projects.length > 0 ? (
         <CardsList list={latestProjects} />
