@@ -17,19 +17,27 @@
 
     &__list {
         display: flex;
+        flex-direction: column;
         justify-content: start;
-        align-items: center;
         gap: rem(10);
+
+        @include mobile-above {
+            flex-direction: row;
+            align-items: center;
+        }
     }
 
-    &__item {
-        &:not(:last-child) {
-            &::after {
-                content: '|';
-                margin-inline: rem(5);
+    @include mobile-above {
+        &__item {
+            &:not(:last-child) {
+                &::after {
+                    content: '|';
+                    margin-inline: rem(5);
+                }
             }
         }
     }
+
 
     &__link {
         font-family: var(--ff-accent);
