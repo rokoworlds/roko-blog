@@ -3,6 +3,7 @@
 .footer {
 
     padding-top: rem(20);
+    font-size: rem(11);
     // border-top: var(--border);
 
     &__inner {
@@ -10,14 +11,22 @@
         justify-content: space-between;
         align-items: center;
         padding-block: rem(20);
-        color: var(--color-light-20)
+        color: var(--color-light-20);
+
+        @include mobile {
+            flex-direction: column-reverse;
+            gap: rem(20);
+        }
     }
 
-    &__copyright {
-        font-size: rem(11);
+    &__settings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-button {
+            margin-inline: rem(4);
+        }
     }
 
-    &-theme__button {
-        font-size: rem(12);
-    }
 }
