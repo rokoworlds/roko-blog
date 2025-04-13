@@ -18,7 +18,7 @@ const latestProjects = projects.slice(-2);
 <Layout>
   <h1 class="visually-hidden">Welcome to Roman Coropat personal site</h1>
   <About />
-  <Section title="Latest posts" link="/blog">
+  <Section title="Latest posts" link="/roko-blog/blog">
     {
       posts.length > 0 ? (
         <CardsList list={latestPosts} category="blog" />
@@ -30,7 +30,7 @@ const latestProjects = projects.slice(-2);
   <Section title="Work Experience">
     <Work />
   </Section>
-  <Section title="Recent projects" link="/projects">
+  <Section title="Recent projects" link="/roko-blog/projects">
     {
       projects.length > 0 ? (
         <CardsList list={latestProjects} category="projects" />
