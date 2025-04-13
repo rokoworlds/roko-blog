@@ -1,5 +1,5 @@
 ---
-
+import resume from "../../public/data/resume-coropat-2025 eng.pdf";
 ---
 
 <footer class="footer">
@@ -11,7 +11,9 @@
       <button class="footer__settings-button button" id="themeToggle">
         light | dark
       </button>
-      <button class="footer__settings-button button"> my resume </button>
+      <a href={resume} download="roman-coropat-resume">
+        <button class="footer__settings-button button"> my resume </button>
+      </a>
     </div>
   </div>
 </footer>
