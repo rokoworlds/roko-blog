@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import PageLayout from "../../layouts/PageLayout.astro";
+import Container from "../../components/Container.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("projects");
@@ -15,5 +16,17 @@ const { Content } = await render(project);
 ---
 
 <PageLayout frontmatter={project.data}>
-  <Content />
+  <Container>
+    <a href="/projects">
+      <button class="button button-small"> back to projects </button>
+    </a>
+    <Content />
+    <div class="to-top">
+      <a href="#">
+        <button class="button button-small button__to-top">
+          back to top
+        </button>
+      </a>
+    </div>
+  </Container>
 </PageLayout>

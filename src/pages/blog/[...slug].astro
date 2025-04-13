@@ -17,8 +17,16 @@ const { Content } = await render(post);
 
 <PageLayout frontmatter={post.data}>
   <Container>
-    <button>back to blog</button>
+    <a href="/blog">
+      <button class="button button-small"> back to blog </button>
+    </a>
     <Content />
-    <button>back to top</button>
+    <div class="to-top">
+      <a href="#">
+        <button class="button button-small button__to-top">
+          back to top
+        </button>
+      </a>
+    </div>
   </Container>
 </PageLayout>

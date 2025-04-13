@@ -12,4 +12,8 @@
         color: var(--color-secondary);
         border-color: var(--color-secondary);
     }
+
+    &-small {
+        font-size: rem(12);
+    }
 }
