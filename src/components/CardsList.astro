@@ -10,7 +10,10 @@ const { list, category } = Astro.props;
       list.map((item: any) => {
         return (
           <li class="cards-list__item">
-            <a href={`/${category}/${item.id}/`} class="cards-list__link">
+            <a
+              href={`/roko-blog/${category}/${item.id}/`}
+              class="cards-list__link"
+            >
               <Card
                 cardTitle={item.data.title}
                 cardText={item.data.description}
