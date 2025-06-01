@@ -20,4 +20,4 @@ A responsive front-end layout built as a practice project to replicate the Posit
 - Deployed via GitHub Pages for live preview
 
 ## 🔗 Live Demo
-- **GitHub Repository:** [demo-positivus-layout](https://github.com/rokoworlds/demo-positivus-layout)
+- **GitHub Repository:** [demo-positivus-layout](https://rokoworlds.github.io/demo-positivus-layout/)
