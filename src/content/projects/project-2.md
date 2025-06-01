@@ -1,5 +1,5 @@
 ---
-title: 'Memory Game'
+title: 'Project "Memory Game"'
 description: 'Test your memory'
 pubDate: 2025-05-19
 
