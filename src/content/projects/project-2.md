@@ -24,5 +24,5 @@ You can customize the game:
 - 🧸 **Emoji Selector**: Choose a themed emoji set to personalize your experience
 - 🧠 **Difficulty Settings**: Adjust the grid size for easier or more challenging gameplay
 
-# Demo:
+## 🔗 Live Demo
 https://rokoworlds.github.io/demo-memory-game/

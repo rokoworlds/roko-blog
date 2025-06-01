@@ -43,5 +43,5 @@ In the app, this hook is used to store and retrieve:
 ✅ Tag lists for filtering and organizing notes
 
 
-## Demo:
+## 🔗 Live Demo
 https://rokoworlds.github.io/jottings/
