@@ -1,14 +1,14 @@
 ---
-title: 'Memory Game'
-description: 'About the game'
-pubDate: 2025-04-05
+title: 'Project "Jottings"'
+description: 'Notes-taking web application'
+pubDate: 2025-05-15
 
 ---
 
 # 🚀 Project 'Jottings'
 
 **Description:**  
-Notes-taking web application rebuilt using React, TypeScript, and Vite.
+Notes-taking web application built using React, TypeScript, and Vite.
 
 ---
 
